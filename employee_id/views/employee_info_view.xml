@@ -37,7 +37,7 @@
    <menuitem
        name="Employee"
        id="employee_menu"
-       sequence="6"
+       sequence="8"
        action="employee"/>
 
 </odoo>
