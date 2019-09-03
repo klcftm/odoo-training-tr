@@ -11,6 +11,8 @@ class Certification(models.Model):
     owner_id=fields.Many2one("res.partner")
     entity_id=fields.Many2one("res.partner")
 
+
+
     @api.constrains('entity_id')
     def _check_entity_id(self):
         if self.entity_id and self.entity_id.is_certification_body == False:
