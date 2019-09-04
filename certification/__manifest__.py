@@ -17,7 +17,9 @@
               'views/standard_view.xml',
               'views/res_partner_view.xml'
 
+
     ],
+    "demo":['data/certification_data.xml'],
     'development_status':'Beta',
     'maintainers':['ceeficent'],
 }
