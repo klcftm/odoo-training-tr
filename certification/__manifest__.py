@@ -16,7 +16,8 @@
               'security/ir.model.access.csv',
               'views/certification_view.xml',
               'views/standard_view.xml',
-              'views/res_partner_view.xml'
+              'views/res_partner_view.xml',
+              'reports/certification_report.xml'
 
 
     ],
