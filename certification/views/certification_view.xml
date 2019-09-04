@@ -59,17 +59,19 @@
        <field name="view_mode">tree,form</field>
    </record>
 
+      <menuitem
+       name="Certification"
+       id="certification_menu"
+       sequence="6"
+       action="certification"/>
+
        <menuitem
        id="certification.bodies"
        parent="certification_menu"
        sequence="5"
        action="action_certification_bodies"/>
 
-   <menuitem
-       name="Certification"
-       id="certification_menu"
-       sequence="6"
-       action="certification"/>
+
 
 </odoo>
 

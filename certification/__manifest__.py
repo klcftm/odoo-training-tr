@@ -12,7 +12,8 @@
     "depends": [
         'base'
     ],
-    "data": [ 'security/ir.model.access.csv',
+    "data": [ 'security/certification_security.xml',
+              'security/ir.model.access.csv',
               'views/certification_view.xml',
               'views/standard_view.xml',
               'views/res_partner_view.xml'
@@ -22,4 +23,6 @@
     "demo":['data/certification_data.xml'],
     'development_status':'Beta',
     'maintainers':['ceeficent'],
+    'installable': True,
+    'application': True,
 }

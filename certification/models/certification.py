@@ -55,4 +55,9 @@ class Certification(models.Model):
         if self.date:
             self.update({'date': self.date + timedelta(days=30)})
 
-#-------------------------------------------------
+    @api.model
+    def hello_world(self):
+        return 'Hello World'
+
+
+# -------------------------------------------------
