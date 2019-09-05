@@ -2,19 +2,21 @@
 # Copyright 2017-Apertoso N.V. (<http://www.apertoso.be>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
-    "name": "Certification",
+    "name": "It Assignment",
     "summary": "Define certification for different purposes",
     'version': '12.0.1.0.0',
-    "category":"Certification  Management",
+    "category":"Management",
     "website": "https://github.com/klcftm",
-    "author": "Eficent,Odoo Community Association(OCA)",
+    "author": "Fatma Kılıç,Selehattin Mücahit Keskin,Selim Has",
     "license": "AGPL-3",
     "depends": [
-        'base'
+        'base','hr'
     ],
     "data": [
               'security/ir.model.access.csv',
               'views/assignment_tool_view.xml',
+              'views/user_view.xml',
+
 
 
 
