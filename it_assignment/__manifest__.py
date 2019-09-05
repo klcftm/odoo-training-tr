@@ -14,6 +14,7 @@
     ],
     "data": [
               'security/ir.model.access.csv',
+              'views/assignment_tool_view.xml',
 
 
 
