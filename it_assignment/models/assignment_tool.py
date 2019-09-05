@@ -7,7 +7,7 @@ class AssignmentTool(models.Model):
     _name = 'assignment.tool'  # database name
     _description = 'It assignment tool'
 
-    obj_id = fields.Char(string = "Object ID")
+    obj_id = fields.Integer(string = "Object ID")
     user_name= fields.Many2one('res.users', 'Employee', default=lambda self: self.env.user.id, readonly=True)
     obj_type=fields.Selection([
         ('computer',"Computer"),
@@ -38,5 +38,30 @@ class AssignmentTool(models.Model):
         #	Eğer şu anki state validate1 ise state'i refuse olarak değiştirilir.
 
         return True
+
+    @api.onchange('obj_type')
+    @api.multi
+    def onchangefunc(self):
+        ass_env=self.env['assignment.tool'].search([])
+        real_value = 0
+        obje_turu = self.obj_type
+
+        for i in ass_env:
+            value = i.obj_id
+            if value > real_value:
+                real_value = value
+
+
+        if  obje_turu == False:
+            self.obj_id = 0
+        else:
+            self.obj_id = real_value + 1
+
+
+
+
+
+
+
 
 # -------------------------------------------------

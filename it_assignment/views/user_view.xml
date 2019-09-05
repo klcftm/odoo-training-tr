@@ -27,6 +27,7 @@
                         <field name="obj_type"
                                attrs="{'visible': [('obj_type','in', ['computer', 'screen','keyboard_mouse','network_computer','telephone','printer'])]}"/>
                         <field name="date"/>
+                        <field name="obj_id"/>
                     </group>
 
 
@@ -55,6 +56,7 @@
         <menuitem id="manager_menu"
                   parent="equipment_menu"
                   name="Management"
+                  groups="hr.group_hr_manager"
                   action="management_menu_action"/>
 
 
