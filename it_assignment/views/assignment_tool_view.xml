@@ -9,8 +9,9 @@
         <field name="res_model">assignment.tool</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[]</field>
-        <field name="context">{'tree_view_ref':'it_assignment.view_management_tree' , 'form_view_ref':'it_assignment.assignment_tool_form' }</field>
+
+        <!--        <field name="domain">[]</field>-->
+        <field name="context">{'tree_view_ref':'it_assignment.view_management_tree'}</field>
     </record>
 
     <record id="view_management_tree" model="ir.ui.view">
@@ -20,7 +21,7 @@
 
             <tree string="Assignment Tool">
                 <field name="obj_id"/>
-                <field name="user_name"/>
+                <field name="name"/>
                 <field name="obj_type"/>
                 <field name="date"/>
                 <field name="assign_status"/>

@@ -8,7 +8,7 @@ class AssignmentTool(models.Model):
     _description = 'It assignment tool'
 
     obj_id = fields.Integer(string = "Object ID")
-    user_name= fields.Many2one('res.users', 'Employee', default=lambda self: self.env.user.id, readonly=True)
+    name= fields.Many2one('res.users', 'Employee', default=lambda self: self.env.user.id, readonly=True)
     obj_type=fields.Selection([
         ('computer',"Computer"),
         ('screen', "Screen"),

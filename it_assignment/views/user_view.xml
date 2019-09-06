@@ -6,7 +6,7 @@
             <field name="res_model">assignment.tool</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('user_name','=',uid)]</field>
+<!--            <field name="domain">[('name','=',uid)]</field>-->
             <!--field name="context">[{'form_view_ref':'it_assignment.equipment_request_form'}]</field-->
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">You have not any equipment
@@ -23,7 +23,7 @@
 
                 <form string="Equipment Form">
                     <group>
-                        <field name="user_name"/>
+                        <field name="name"/>
                         <field name="obj_type"
                                attrs="{'visible': [('obj_type','in', ['computer', 'screen','keyboard_mouse','network_computer','telephone','printer'])]}"/>
                         <field name="date"/>
